@@ -1,0 +1,215 @@
+"<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-NEXUS Club Inauguration</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- Chosen Palette: Warm Neutrals -->
+    <!-- Application Structure Plan: A single-page, top-down narrative structure that guides the user from the main announcement to event details and finally to a call-to-action. This linear flow is intuitive for an event invitation, ensuring clarity and building excitement. The structure includes a hero section for immediate impact, a countdown timer for engagement, a clear details section for essential information, an interactive agenda, and a footer for contact/social links. This was chosen over a complex dashboard as the information is straightforward and benefits from a clean, story-like presentation. -->
+    <!-- Visualization & Content Choices: Report Info: Event Details -> Goal: Inform/Engage -> Viz/Presentation: Hero text, countdown timer, icon-based info blocks, interactive cards -> Interaction: Live countdown, hover effects on cards -> Justification: Creates a dynamic and engaging poster-like experience. The countdown adds urgency, icons improve scannability, and interactive cards for the agenda encourage user exploration. -> Library/Method: Vanilla JS for the countdown, HTML/Tailwind for layout and styling. -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <style>"
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg {
+            background-color: #F5F5F5;
+            background-image: radial-gradient(#D1D5DB 0.5px, transparent 0.5px), radial-gradient(#D1D5DB 0.5px, #F5F5F5 0.5px);
+            background-size: 20px 20px;
+            background-position: 0 0, 10px 10px;
+        }
+        .card-hover-effect {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .card-hover-effect:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-neutral-50 text-neutral-800">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-amber-600 shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-white text-2xl font-bold">
+                    <a href="#">E-NEXUS</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="text-white hover:text-amber-200 transition-colors">Home</a>
+                    <a href="#details" class="text-white hover:text-amber-200 transition-colors">Details</a>
+                    <a href="#agenda" class="text-white hover:text-amber-200 transition-colors">Agenda</a>
+                    <a href="#contact" class="text-white hover:text-amber-200 transition-colors">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <!-- Mobile Menu Button -->
+                    <button class="text-white focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container mx-auto px-4 py-8 md:py-16">
+
+        <header class="text-center hero-bg rounded-2xl p-8 md:p-12 mb-12 md:mb-16">
+            <div class="mb-4">
+                <img src="./E-NEXUS logo.jpg" alt="E-NEXUS Club Logo" class="mx-auto rounded-full w-24 h-24 md:w-32 md:h-32 shadow-lg object-cover" onerror="this.onerror=null;this.src='https://placehold.co/128x128/FFFFFF/333333?text=Logo';">
+            </div>
+            <h1 class="text-5xl md:text-7xl font-black text-neutral-900 tracking-tight mb-2">E-NEXUS</h1>
+            <p class="text-2xl md:text-4xl font-bold text-amber-600">Grand Inauguration!</p>
+            <p class="max-w-2xl mx-auto mt-4 text-neutral-600">
+                Get ready to embark on an exciting journey as we officially launch our new club. Join us for an evening of inspiration, community, and fun!
+            </p>
+        </header>
+
+        <main>
+            <section id="countdown-section" class="text-center mb-12 md:mb-16">
+                <h2 class="text-2xl font-bold mb-4 text-neutral-700">Launching In</h2>
+                <div id="countdown" class="flex justify-center space-x-2 md:space-x-4 text-center">
+                    <div class="bg-white p-4 rounded-lg shadow-md w-20 md:w-24">
+                        <div id="days" class="text-4xl md:text-5xl font-bold text-amber-600">00</div>
+                        <div class="text-xs md:text-sm text-neutral-500">Days</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-md w-20 md:w-24">
+                        <div id="hours" class="text-4xl md:text-5xl font-bold text-amber-600">00</div>
+                        <div class="text-xs md:text-sm text-neutral-500">Hours</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-md w-20 md:w-24">
+                        <div id="minutes" class="text-4xl md:text-5xl font-bold text-amber-600">00</div>
+                        <div class="text-xs md:text-sm text-neutral-500">Minutes</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-md w-20 md:w-24">
+                        <div id="seconds" class="text-4xl md:text-5xl font-bold text-amber-600">00</div>
+                        <div class="text-xs md:text-sm text-neutral-500">Seconds</div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="details" class="bg-white rounded-2xl p-8 mb-12 md:mb-16 shadow-sm scroll-mt-20">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <div class="flex flex-col items-center">
+                        <span class="text-4xl mb-2">📅</span>
+                        <h3 class="font-bold text-lg">Date & Time</h3>
+                        <p class="text-neutral-600">Saturday, August 9th</p>
+                        <p class="text-neutral-600">4:00 PM - 5:00 PM</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <span class="text-4xl mb-2">📍</span>
+                        <h3 class="font-bold text-lg">Venue</h3>
+                        <p class="text-neutral-600">8th Block Seminar Hall</p>
+                        <p class="text-neutral-600">College Campus</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <span class="text-4xl mb-2">🎤</span>
+                        <h3 class="font-bold text-lg">Guest Speaker</h3>
+                        <p class="text-neutral-600">To Be Announced</p>
+                        <p class="text-neutral-600">&nbsp;</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="agenda" class="text-center mb-12 md:mb-16 scroll-mt-20">
+                <h2 class="text-3xl font-bold mb-2">What to Expect</h2>
+                <p class="max-w-2xl mx-auto mb-8 text-neutral-600">Our inauguration is packed with engaging sessions and activities. Here’s a glimpse of the event flow. Hover over each card for a little flair!</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white p-6 rounded-lg shadow-sm text-left card-hover-effect">
+                        <h3 class="font-bold text-lg text-amber-700 mb-2">Introduction to E-NEXUS</h3>
+                        <p class="text-neutral-600 text-sm">Discover the vision, mission, and exciting plans we have for the year ahead.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm text-left card-hover-effect">
+                        <h3 class="font-bold text-lg text-amber-700 mb-2">Guest Speaker Session</h3>
+                        <p class="text-neutral-600 text-sm">Gain insights from an industry expert on a topic that resonates with our club's core values.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm text-left card-hover-effect">
+                        <h3 class="font-bold text-lg text-amber-700 mb-2">Live Performance/Activity</h3>
+                        <p class="text-neutral-600 text-sm">Enjoy a special performance or participate in a fun, interactive activity to break the ice.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm text-left card-hover-effect">
+                        <h3 class="font-bold text-lg text-amber-700 mb-2">Meet & Greet</h3>
+                        <p class="text-neutral-600 text-sm">Connect with the founding members and fellow enthusiasts. Let's start building our community!</p>
+                    </div>
+                     <div class="bg-white p-6 rounded-lg shadow-sm text-left card-hover-effect">
+                        <h3 class="font-bold text-lg text-amber-700 mb-2">Networking & Refreshments</h3>
+                        <p class="text-neutral-600 text-sm">Mingle with peers over light refreshments and discuss ideas in a relaxed atmosphere.</p>
+                    </div>
+                     <div class="bg-white p-6 rounded-lg shadow-sm text-left card-hover-effect">
+                        <h3 class="font-bold text-lg text-amber-700 mb-2">Join The Movement</h3>
+                        <p class="text-neutral-600 text-sm">Learn how you can become a part of E-NEXUS and contribute to our journey.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="text-center bg-amber-600 text-white rounded-2xl p-8">
+                 <h2 class="text-3xl font-bold mb-2">Where Innovation Meets Community</h2>
+                 <p class="max-w-2xl mx-auto mb-6">We can't wait to see you there and build something amazing together!</p>
+                 <button class="bg-white text-amber-600 font-bold py-3 px-6 rounded-lg hover:bg-neutral-100 transition-colors">Mark Your Calendar</button>
+            </section>
+
+        </main>
+
+        <footer id="contact" class="text-center mt-12 md:mt-16 pt-8 border-t border-neutral-200 scroll-mt-20">
+            <p class="font-bold mb-2">Follow us & stay updated!</p>
+            <div class="flex justify-center space-x-4 mb-4">
+                <a href="https://www.instagram.com/enexus_kare/" target="_blank" class="text-neutral-500 hover:text-amber-600">Instagram</a>
+                <a href="https://www.linkedin.com/in/e-nexus-6a6840332" target="_blank" class="text-neutral-500 hover:text-amber-600">LinkedIn</a>
+                <a href="#" class="text-neutral-500 hover:text-amber-600">Website</a>
+            </div>
+            <p class="text-sm text-neutral-500">For more information, contact: <a href="mailto:enexusoffl@gmail.com" target="_blank" class="underline">enexusoffl@gmail.com</a></p>
+        </footer>
+
+    </div>
+
+    <script>
+        const countdown = () => {
+            // Set a future date for demonstration purposes
+            const eventDate = new Date('August 9, 2025 16:00:00').getTime();
+            const now = new Date().getTime();
+            const difference = eventDate - now;
+
+            if (difference > 0) {
+                const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+                document.getElementById('days').innerText = days < 10 ? '0' + days : days;
+                document.getElementById('hours').innerText = hours < 10 ? '0' + hours : hours;
+                document.getElementById('minutes').innerText = minutes < 10 ? '0' + minutes : minutes;
+                document.getElementById('seconds').innerText = seconds < 10 ? '0' + seconds : seconds;
+            } else {
+                document.getElementById('countdown').innerHTML = '<h2 class="text-3xl font-bold text-amber-600">The event has started!</h2>';
+                clearInterval(interval);
+            }
+        };
+
+        const interval = setInterval(countdown, 1000);
+        countdown(); // Initial call
+        
+        // Calendar button functionality
+        const calendarButton = document.querySelector('.bg-white.text-amber-600');
+        if (calendarButton) {
+            calendarButton.addEventListener('click', () => {
+                const eventTitle = 'E-NEXUS Club Inauguration';
+                const eventDescription = 'Join us for the grand inauguration of the E-NEXUS club! An evening of inspiration, community, and fun.';
+                const eventLocation = 'Main Auditorium, College Campus';
+                // Dates must be in YYYYMMDDTHHMMSSZ format for UTC time
+                const startTime = '20250809T093000Z'; // 3:00 PM GMT+5:30 -> 9:30 AM UTC
+                const endTime = '20250809T110000Z';   // 4:30 PM GMT+5:30 -> 11:00 AM UTC
+
+                const googleCalendarUrl = `https://www.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(eventTitle)}&details=${encodeURIComponent(eventDescription)}&location=${encodeURIComponent(eventLocation)}&dates=${startTime}/${endTime}`;
+                
+                window.open(googleCalendarUrl, '_blank');
+            });
+        }
+    </script>
+
+</body>
+</html>
