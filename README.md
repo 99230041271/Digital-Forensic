@@ -23,7 +23,7 @@
   <br>
 <br>
 
-  <img width="1919" height="1016" alt="Screenshot 2025-08-30 113433" src="https://github.com/user-attachments/assets/eaa20cad-34e6-4b5b-91cc-26b38932d100" />
+<img width="1919" height="1079" alt="1" src="https://github.com/user-attachments/assets/e5ab9ee3-23ef-4528-8903-e243705c85f5" />
 
 <br>
 <br>
@@ -50,7 +50,7 @@ A dialog box will appear where you configure where and how the memory will be sa
 <br>
 <br>
 
-<img width="1089" height="733" alt="image" src="https://github.com/user-attachments/assets/063d0880-5649-46b7-aa7f-49d958acf63b" />
+<img width="1919" height="1079" alt="2" src="https://github.com/user-attachments/assets/422c5d3a-d6b6-4e13-9598-549e68305008" />
 
  
 <br>
@@ -62,7 +62,7 @@ A dialog box will appear where you configure where and how the memory will be sa
 <br>
 
 
-<img width="1090" height="732" alt="image" src="https://github.com/user-attachments/assets/73069610-1704-424b-a0bb-c74981d19b02" />
+<img width="1919" height="1079" alt="3" src="https://github.com/user-attachments/assets/ec55111e-a92e-4796-9620-c746c230b071" />
 
 <br>
 <br>
@@ -147,7 +147,7 @@ A window will appear asking you to choose the source type:
   - Enter case details, examiner name, and description.  
   - This information is stored in the image metadata (important for documentation).
  <p align="center">
-<img width="1088" height="741" alt="image" src="https://github.com/user-attachments/assets/ebaa67c1-e547-4cd0-9192-15df051cf0ed" />
+<img width="1919" height="1079" alt="6" src="https://github.com/user-attachments/assets/b54228ea-2d2f-4fad-a6e2-308031b09c27" />
 
 </p>
 <br>
@@ -164,7 +164,7 @@ A window will appear asking you to choose the source type:
   <br>
   
 <p align="center">
-<img width="1090" height="738" alt="image" src="https://github.com/user-attachments/assets/15e6e39a-3dec-44c7-a20d-e059c6dade7b" />
+<img width="1919" height="1079" alt="7" src="https://github.com/user-attachments/assets/1e70219b-98ae-48d8-a922-05835baad8e9" />
 </p>
 <br>
 <br>
@@ -177,9 +177,9 @@ A window will appear asking you to choose the source type:
   <br>
   <br>
   <p align="center">
- <img width="1088" height="734" alt="image" src="https://github.com/user-attachments/assets/14975271-7978-410f-b4f4-f2a63c328048" />
+<img width="1919" height="1079" alt="8" src="https://github.com/user-attachments/assets/3228c063-a78c-45cd-8789-6cc1e7608b6f" />
 
-  <img width="1093" height="733" alt="image" src="https://github.com/user-attachments/assets/944f873f-a792-48ff-884c-d26afa6ec57b" />
+<img width="1919" height="1079" alt="9" src="https://github.com/user-attachments/assets/9538bd4f-c6ea-48b3-b46f-21d2eacd7979" />
 
 </p>
 <br>
