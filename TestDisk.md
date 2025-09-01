@@ -110,7 +110,7 @@ Windows: Download the executable from the official CGSecurity website.
 
     <br>
 <br>
-<img width="1127" height="655" alt="Screenshot 2025-09-01 145600" src="https://github.com/user-attachments/assets/ceebaec2-3afd-4263-ae13-6ee32213098e" />
+<img width="972" height="505" alt="Screenshot 2025-09-01 224609" src="https://github.com/user-attachments/assets/d8026a13-df97-4103-b04c-47ee5001aa55" />
 
 </p>
 <br>
