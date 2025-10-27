@@ -1,6 +1,7 @@
-# Ex.No.1    FTK Imager: A Forensic Imaging Tool Overview
+## Experiment 1-FTK Imager: A Forensic Imaging Tool Overview
 
-## Acquiring Volatile Memory (RAM) Using FTK Imager
+## AIM:
+Acquiring Volatile Memory (RAM) Using FTK Imager
 <br>
 
 
@@ -190,6 +191,22 @@ A window will appear asking you to choose the source type:
 - After completion, FTK Imager verifies the hashes automatically.  
 - A final window shows **MD5** and **SHA1** hashes for both the source drive and image.  
 - Matching hashes confirm the forensic image’s integrity.
+
+---
+**Result:**
+
+Using **FTK Imager**, volatile memory (RAM) was successfully acquired from the target system.
+The tool created a complete forensic image of the system’s memory in a secure format without altering the original data.
+The captured memory image was verified through hash values to ensure data integrity.
+This image can now be used for further forensic analysis, such as identifying running processes, open network connections, and potential malicious activities.
+
+---
+
+**Conclusion:**
+
+The experiment demonstrates that **FTK Imager** is an effective and reliable tool for acquiring volatile memory in a forensic investigation.
+It ensures data integrity through hashing and provides investigators with crucial in-memory evidence.
+Thus, FTK Imager serves as a vital utility in digital forensics for capturing, preserving, and analyzing live system memory without compromising the original evidence.
 
 ---
 ## Notes
