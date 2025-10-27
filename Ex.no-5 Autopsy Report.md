@@ -33,10 +33,11 @@ Start Analysis – Begin the examination process to allow Autopsy to process and
 ### Step-4
 Initial Analysis and Overview:
 
-- Ingest Progress
-- Explore the Resulting Artifacts
-- Use the Tree Viewer
+Ingest Progress – Monitor the progress of data ingestion as Autopsy analyzes the selected data source.
 
+Explore the Resulting Artifacts – Review the extracted artifacts such as files, emails, web history, and registry entries.
+
+Use the Tree Viewer – Navigate through the hierarchical view to examine different categories of evidence efficiently.
 ![(images/step4.png)](https://github.com/Krishnabhargav08/DIGITAL-FORENSICS-LAB-EXERCISES/blob/972f703be7a3d1f082240d8c75b82fb83a26e45c/images/Ex-5%20im4.png)
 
 ### Step-5
@@ -44,18 +45,26 @@ Reporting:
 
 Generate a Report:
 
-- After analyzing the data, click on Generate Report from the toolbar.
-- Choose the type of report (HTML, CSV, Excel, etc.).
-- Select which parts of the analysis you want to include in the report.
+Once the analysis is complete, click Generate Report from the toolbar.
+
+Choose the preferred report format (e.g., HTML, CSV, Excel, etc.).
+
+Select the specific sections or findings you want to include in the report.
+
+
 
 Export Findings:
 
-- Export individual files or artifacts that you need for your report or further analysis.
+Export selected files or artifacts that are relevant to your report or required for further examination.
+
+
 
 Final Review:
 
-- Review the report to ensure it includes all relevant information.
-- Save or print the report for use in your case.
+Carefully review the generated report to verify that it contains all necessary and relevant information.
+
+
+Save or print the finalized report for documentation and inclusion in your case file.
 
 ![[Step 5 Screenshot](images/step5.png)](https://github.com/Krishnabhargav08/DIGITAL-FORENSICS-LAB-EXERCISES/blob/972f703be7a3d1f082240d8c75b82fb83a26e45c/images/Ex-5%20im5.png)
 
@@ -72,13 +81,11 @@ Text in the report
 ![(images/step5.png)](https://github.com/Krishnabhargav08/DIGITAL-FORENSICS-LAB-EXERCISES/blob/972f703be7a3d1f082240d8c75b82fb83a26e45c/images/Ex-5%20im8.png)
 
 ### Step-6
-Case Closure:
-
 Close the Case:
 
-- Once you have completed your investigation, close the case within Autopsy.
+After completing the investigation, close the case within Autopsy to finalize the analysis process.
 
 Archiving:
 
-- Ensure all data and reports are properly archived according to your organization's policies.
+Make sure all data, evidence files, and generated reports are securely archived in accordance with your organization’s data retention and security policies.
 
