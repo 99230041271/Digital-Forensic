@@ -1,4 +1,4 @@
-Ex.No: 9 – Using Process Explorer to Identify Suspicious Processes
+Experiment 9 – Using Process Explorer to Identify Suspicious Processes
 
 ---
 
