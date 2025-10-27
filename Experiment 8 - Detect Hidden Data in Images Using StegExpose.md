@@ -1,71 +1,55 @@
-v
 
-cx
-# 🧩 Ex.No.8 — Detect Hidden Data in Images Using StegExpose
+Experiment 8 — Detect Hidden Data in Images Using StegExpose
 
 ---
 
-### 🏫 **College:** Kalasalingam University  
-### 👨‍🎓 **Name:** Goru Naga Phaneendra Kumar Babu  
-### 🧾 **Register No:** 99230041067  
-### 💻 **Branch:** CSE – Cybersecurity  
+Aim:
+To detect hidden (steganographic) data in image files using the StegExpose tool and analyze its detection accuracy.
 
 ---
 
-## 🎯 **Aim**
-To **detect hidden (steganographic) data** in image files using the **StegExpose** tool and analyze its **detection accuracy**.
+Objectives:
+
+1. Understand the concept of Steganography and Steganalysis.
+2. Learn to use StegExpose for detecting hidden data.
+3. Evaluate the accuracy of detection using different image datasets.
 
 ---
 
-## 🎓 **Objectives**
-1. Understand the concept of **Steganography** and **Steganalysis**.  
-2. Learn how to use **StegExpose** for hidden data detection.  
-3. Evaluate the detection accuracy using **different image datasets**.
+About StegExpose:
+StegExpose is an open-source steganalysis tool used to detect hidden information within image files.
+It utilizes multiple statistical detection techniques to identify inconsistencies caused by steganographic embedding.
+
+Detection Techniques Used:
+
+| Technique                  | Description                                                              |
+| -------------------------- | ------------------------------------------------------------------------ |
+| Sample Pair Analysis (SPA) | Detects hidden data based on pixel pair statistics.                      |
+| RS Analysis                | Analyzes correlations between pixel groups to identify anomalies.        |
+| Chi-Square Attack          | Examines irregularities in pixel frequency distributions.                |
+| Primary Sets               | Detects embedding noise through variations in statistical distributions. |
 
 ---
 
-## 🧠 **Theory**
+Requirements:
 
-### 🔹 Steganography  
-The art of **hiding secret data** within non-secret media files such as **images, audio, or videos** without visibly altering them.
-
-### 🔹 Steganalysis  
-The process of **detecting and analyzing** such hidden information to determine if a file contains concealed data.
-
----
-
-### ⚙️ About **StegExpose**
-**StegExpose** is an **open-source steganalysis tool** designed to detect **hidden messages in images**.  
-It combines multiple statistical detection techniques to identify irregularities caused by steganographic embedding.
-
-#### 🔍 Detection Techniques Used:
-| Technique | Description |
-|------------|-------------|
-| **Sample Pair Analysis (SPA)** | Detects hidden data based on pixel pair statistics. |
-| **RS Analysis** | Analyzes the correlation between pixel groups. |
-| **Chi-Square Attack** | Examines frequency anomalies in pixel values. |
-| **Primary Sets** | Identifies embedding noise through statistical distribution. |
+| Component         | Details                                                         |
+| ----------------- | --------------------------------------------------------------- |
+| Operating System  | Windows or Linux                                                |
+| Software Required | Java (JDK 8 or higher)                                          |
+| Tool              | StegExpose.jar                                                  |
+| Input Files       | Normal and steganographically modified image files (.jpg, .png) |
 
 ---
 
-## 🧰 **Requirements**
+Algorithm / Procedure:
 
-| Component | Details |
-|------------|----------|
-| **Operating System** | Windows / Linux |
-| **Software Required** | Java (JDK 8 or above) |
-| **Tool** | StegExpose.jar |
-| **Input Files** | Normal & Steganographically modified images (`.jpg`, `.png`) |
+Step 1: Download and Setup
 
----
+* Download the StegExpose.jar file from GitHub.
+* Verify that Java JDK or JRE is installed and configured on your system.
+* Place the StegExpose.jar file in a working directory for analysis.
 
-## ⚙️ **Algorithm / Procedure**
-
-### 🪜 Step 1: Download and Setup
-- Download **StegExpose.jar** from GitHub.  
-- Ensure **Java JDK / JRE** is properly installed on your system.
-
-> 📸 Example Setup Screenshot  
 > <img width="800" alt="image" src="https://github.com/user-attachments/assets/8f6f5aa9-c907-4868-b9b8-3f249939fc0e" />
 
 ---
