@@ -1,4 +1,3 @@
-
 Experiment 8 — Detect Hidden Data in Images Using StegExpose
 
 ---
@@ -54,19 +53,36 @@ Step 1: Download and Setup
 
 ---
 
-### 🪜 Step 2: Prepare Image Files
-Prepare two categories of image samples:
-1. 🖼️ **Original Images** — no hidden data.  
-2. 🕵️ **Stego Images** — data embedded using tools like:
+Step 2: Prepare Image Files
+
+Prepare two sets of image samples for analysis:
+
+1. Original Images – Images that do not contain any hidden data.
+2. Stego Images – Images in which data has been embedded using tools such as:
+
+   * OpenStego
+   * SilentEye
+   * QuickStego
+   * SSuite Picsel Security
+
+These two categories will be used to compare normal and steganographically modified images during detection.
+
    - [OpenStego](https://www.openstego.com)
    - [SilentEye](https://sourceforge.net/projects/silenteye/)
 
 ---
 
-### 🪜 Step 3: Run StegExpose
-1. Open **Command Prompt / Terminal**.  
-2. Navigate to the folder containing `StegExpose.jar` and images.  
-3. Run the following command:
+Step 3: Run StegExpose
+
+1. Open Command Prompt or Terminal.
+2. Navigate to the directory that contains the StegExpose.jar file and the image samples.
+3. Execute the following command to analyze the images:
+
+Example command:
+java -jar StegExpose.jar "C:\Forensics_Lab\Images"
+
+This command scans all images in the specified folder and generates a report indicating the likelihood of hidden data in each file.
+
 
    ```bash
    java -jar StegExpose.jar <image_folder_path> -t 0.2 -a
