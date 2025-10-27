@@ -1,6 +1,6 @@
 v
 
-
+c
 # 🧩 Ex.No.8 — Detect Hidden Data in Images Using StegExpose
 
 ---
