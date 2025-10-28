@@ -1,4 +1,4 @@
-#   Ex.No.3   Wireshark – Network Packet Capture and Analysis Tool
+#   Experiment 3-Wireshark – Network Packet Capture and Analysis Tool
 
 
 ## Procedure: Capturing Plaintext Passwords
