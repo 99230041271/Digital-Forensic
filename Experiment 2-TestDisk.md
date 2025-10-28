@@ -1,4 +1,4 @@
-#  Ex.No.2    TestDisk: Open-Source Data Recovery Tool
+#  Experiment 2- TestDisk: Open-Source Data Recovery Tool
 
 ## Aim :
 To use TestDisk step by step to recover a missing partition and repair a corrupted one.
